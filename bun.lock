@@ -1,0 +1,23 @@
+{
+  "lockfileVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "uncar",
+      "dependencies": {
+        "@ipld/car": "^5.2.6",
+        "@ipld/dag-cbor": "^9.0.8",
+      },
+    },
+  },
+  "packages": {
+    "@ipld/car": ["@ipld/car@5.4.2", "", { "dependencies": { "@ipld/dag-cbor": "^9.0.7", "cborg": "^4.0.5", "multiformats": "^13.0.0", "varint": "^6.0.0" } }, "sha512-gfyrJvePyXnh2Fbj8mPg4JYvEZ3izhk8C9WgAle7xIYbrJNSXmNQ6BxAls8Gof97vvGbCROdxbTWRmHJtTCbcg=="],
+
+    "@ipld/dag-cbor": ["@ipld/dag-cbor@9.2.4", "", { "dependencies": { "cborg": "^4.0.0", "multiformats": "^13.1.0" } }, "sha512-GbDWYl2fdJgkYtIJN0HY9oO0o50d1nB4EQb7uYWKUd2ztxCjxiEW3PjwGG0nqUpN1G4Cug6LX8NzbA7fKT+zfA=="],
+
+    "cborg": ["cborg@4.2.13", "", { "bin": { "cborg": "lib/bin.js" } }, "sha512-HAiZCITe/5Av0ukt6rOYE+VjnuFGfujN3NUKgEbIlONpRpsYMZAa+Bjk16mj6dQMuB0n81AuNrcB9YVMshcrfA=="],
+
+    "multiformats": ["multiformats@13.4.0", "", {}, "sha512-Mkb/QcclrJxKC+vrcIFl297h52QcKh2Az/9A5vbWytbQt4225UWWWmIuSsKksdww9NkIeYcA7DkfftyLuC/JSg=="],
+
+    "varint": ["varint@6.0.0", "", {}, "sha512-cXEIW6cfr15lFv563k4GuVuW/fiwjknytD37jIOLSdSWuOI6WnO/oKwmP2FQTU2l01LP8/M5TSAJpzUaGe3uWg=="],
+  }
+}
