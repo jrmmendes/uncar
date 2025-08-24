@@ -138,9 +138,9 @@ function showUsage() {
     console.log('  list       List all records in the CAR file');
     console.log('');
     console.log('Examples:');
-    console.log('  node extract-car.js extract repo.car');
-    console.log('  node extract-car.js extract repo.car ./output');
-    console.log('  node extract-car.js list repo.car');
+    console.log('  uncar extract repo.car');
+    console.log('  uncar extract repo.car ./output');
+    console.log('  uncar list repo.car');
 }
 
 async function main() {
