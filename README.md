@@ -15,15 +15,14 @@ git clone --single-branch --depth 1 --branch 1.0.0 https://github.com/jrmmendes/
 ## Usage
 Output of `uncar --help`:
 ```shell
-Usage:
-  uncar <command> <car-file> [output-directory]
+Usage: uncar [options] [command]
+
+Options:
+  -v, --version                            output the current version
+  -h, --help                               display help for command
 
 Commands:
-  extract    Extract all records from CAR file to JSON files
-  list       List all records in the CAR file
-
-Examples:
-  uncar extract repo.car
-  uncar extract repo.car ./output
-  uncar list repo.car
+  list <carFilePath>                       List all records in the CAR file
+  extract <carFilePath> [outputDirectory]  Extract all records from CAR file to JSON files
+  help [command]                           display help for command
 ```
