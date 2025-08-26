@@ -8,7 +8,8 @@ Convert bluesky export's .car to JSON files.
 - git
 - bun (>= 1.2.9)
 ```shell
-git clone https://github.com/jrmmendes/uncar.git uncar && cd uncar && bun install && bun run build && bun link
+git clone --single-branch --depth 1 --branch 1.0.0 https://github.com/jrmmendes/uncar uncar \
+&& cd uncar && bun install && bun run build && bun link
 ```
 
 ## Usage
