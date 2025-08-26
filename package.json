@@ -1,10 +1,10 @@
 {
-  "name": "uncar",
+  "name": "@jrmmendes/uncar",
   "version": "1.0.0",
   "type": "module",
   "description": "Easy extract .car files",
   "scripts": {
-    "build": "bun build --compile --outfile=dist/bin uncar.js"
+    "build": "bun build --compile --outfile=dist/bin src/main.ts"
   },
   "author": "Mendse <jrmmendes@outlook.com>",
   "license": "MIT",
