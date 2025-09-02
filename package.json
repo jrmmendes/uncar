@@ -14,15 +14,16 @@
   "description": "Easy extract .car files",
   "scripts": {
     "prepublishOnly": "bun run build",
-    "build": "bun build --outfile=dist/bin src/main.ts"
+    "build": "bun build src/main.ts --outfile=./dist/uncar.js --target=node --format=esm --minify"
   },
   "author": "Mendes <mendes.software>",
   "license": "MIT",
   "bin": {
-    "uncar": "./dist/bin"
+    "uncar": "./bin.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "bin.js"
   ],
   "dependencies": {
     "@ipld/car": "^5.2.6",
