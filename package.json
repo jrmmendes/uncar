@@ -14,7 +14,7 @@
   "description": "Easy extract .car files",
   "scripts": {
     "prepublishOnly": "bun run build",
-    "build": "bun build --compile --outfile=dist/bin src/main.ts"
+    "build": "bun build --outfile=dist/bin src/main.ts"
   },
   "author": "Mendes <mendes.software>",
   "license": "MIT",
