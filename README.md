@@ -3,8 +3,12 @@ Convert bluesky export's .car to JSON files.
 
 
 ## Install
-### Build with Bun
-#### Requirements
+```shell
+npm i -g @jrmmendes/uncar 
+```
+
+## Build with Bun
+### Requirements
 - git
 - bun (>= 1.2.9)
 ```shell
