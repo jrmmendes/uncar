@@ -1,16 +1,29 @@
 {
   "name": "@jrmmendes/uncar",
   "version": "1.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrmmendes/uncar.git"
+  },
+  "keywords": [
+    "car",
+    "cli",
+    "bluesky"
+  ],
   "type": "module",
   "description": "Easy extract .car files",
   "scripts": {
+    "prepublishOnly": "bun run build",
     "build": "bun build --compile --outfile=dist/bin src/main.ts"
   },
-  "author": "Mendse <jrmmendes@outlook.com>",
+  "author": "Mendes <mendes.software>",
   "license": "MIT",
   "bin": {
     "uncar": "./dist/bin"
   },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@ipld/car": "^5.2.6",
     "@ipld/dag-cbor": "^9.0.8",
@@ -18,5 +31,8 @@
   },
   "devDependencies": {
     "@types/node": "^24.3.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
