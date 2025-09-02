@@ -12,7 +12,7 @@ npm i -g @jrmmendes/uncar
 - git
 - bun (>= 1.2.9)
 ```shell
-git clone --single-branch --depth 1 --branch v1.1.0 https://github.com/jrmmendes/uncar uncar \
+git clone --single-branch --depth 1 --branch v1.2.1 https://github.com/jrmmendes/uncar uncar \
 && cd uncar && bun install && bun run build && bun link
 ```
 
