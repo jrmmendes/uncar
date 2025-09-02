@@ -1,6 +1,7 @@
 import { Command } from "commander";
 import { list } from "./commands/list";
 import { version } from "../package.json";
+import { extract } from "./commands/extract";
 
 const program = new Command();
 
@@ -18,6 +19,7 @@ program
   .command("extract")
   .description("Extract all records from CAR file to JSON files")
   .argument("<carFilePath>", "path of the CAR file")
-  .argument("[outputDirectory]", "directory to save extracted JSON files");
+  .argument("[outputDirectory]", "directory to save extracted JSON files")
+  .action(extract);
 
 await program.parseAsync(process.argv);
